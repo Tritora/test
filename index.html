@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect nach Twitch-Anmeldung</title>
+</head>
+<body>
+  <!-- Hier sollte der Anmeldevorgang stattfinden -->
+  <button onclick="loginWithTwitch()">Mit Twitch anmelden</button>
+
+  <script>
+    function loginWithTwitch() {
+      // Hier solltest du den Twitch-Anmeldevorgang durchführen
+      // und sicherstellen, dass der Benutzer erfolgreich angemeldet ist.
+
+      // Beispiel: Setze eine Variable, die den Anmeldestatus speichert
+      var isUserLoggedIn = true;
+
+      // Überprüfe, ob der Benutzer erfolgreich angemeldet ist
+      if (isUserLoggedIn) {
+        // Wenn der Benutzer angemeldet ist, leite ihn weiter
+        window.location.href = "nächste-seite.html";
+      } else {
+        // Wenn der Benutzer nicht angemeldet ist, handle den Fehler entsprechend
+        alert("Anmeldung fehlgeschlagen. Bitte versuche es erneut.");
+      }
+    }
+  </script>
+</body>
+</html>
